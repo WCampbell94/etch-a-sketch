@@ -44,10 +44,10 @@ function resetSketch() {
 
 function sketchDraw(e) {
 	if (e.target.className == "grid-item") {
-		e.target.style.backgroundColor = `rgba(${e.clientX / 3 + 25}
+		e.target.style.backgroundColor = `rgb(${e.clientX / 3 + 25}
             ,${e.clientY / 3}
-            ,0${(e.clientX % e.clientY) % 225}
-            ,0.7)`;
+			,0${(e.clientX % e.clientY) % 225}`;
+		e.target.style.opacity -= "-0.19";
 	}
 }
 
@@ -56,6 +56,7 @@ function setResolution() {
 }
 // Initial canvas on Load
 let resolution = 64;
+let opacity = 0.3;
 drawCanvas();
 // Event Listeners
 reso.addEventListener("click", () => {

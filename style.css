@@ -16,6 +16,10 @@ div {
 	background-color: white;
 }
 
+.grid-item {
+	opacity: 1;
+}
+
 .btns {
 	display: flex;
 	justify-content: space-evenly;
